@@ -3,29 +3,30 @@
 <head>
  <title>보건의료행정학과1학기-지역사회보건</title>
  <mate charset="utf-8">
- <style>
-   a{color:black}
-   .red-link{color:skyblue;}
-   .red-link:visited
-   .red-link{
-       text-decoration: none;
-       decoration: none;
-   }
-   .head1{
-   font-size:40px;
-   text-align: center;
-   }
- </style>
+ <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class=head1><h1>보건의료행정학과 1학기</h1></div>
+<h1>보건의료행정학과 1학기</h1>
+<input type="button" value="night" onclick="
+var target= document.querySelector('body');
+if(this.value ==='night'){
+  target.style.backgroundColor = 'black';
+  target.style.color = 'white';
+  this.value = 'day';
+} else {
+  target.style.backgroundColor = 'white';
+  target.style.color = 'black';
+  this.value = 'night';
+}
+">
+<div id="grid">
 <ol>
     <li><strong> <a class="red-link" href="도대체무슨소리인지모르겠다1.html">보건교육학</a></strong></li><br>
     <li><strong> <a class="red-link" href=도대체무슨소리인지모르겠다2.html>지역사회보건</a></strong></li>
 </ol>
+<div id="article">
 <h2>지역사회보건</h2>
 <a href="https://eclass3.seoyeong.ac.kr/learn/layout1/a657e0513f76c3ab98762bbb7515cd58/learning" target="_blank" title="서영대학습자료실바로가기">서영대학교 학습자료실 바로가기</a>
-
 <p>( 1 )  공중보건의 정의
 		C.E.A Winslow 1) 는 “공중보건( public health )이란 조직적인 지역사회의 노력을 통해
 서 질병을 예방하고 수명을 연장시키며, 신체적·정신적 효율을 증진시키는 기술과 과
@@ -33,6 +34,8 @@
 한 보건교육 ④ 질병의 조기발견과 예방을 위한 의료 및 간호 서비스의 조직화 ⑤ 모든
 사람이 자기의 건강을 유지하는 데 적합한 생활수준을 보장받도록 사회제도를 발전시키
 는 것 등을 포함하고 있다.”라고 정의하였다.
-</p>
+ </p>
+ </div>
+</div>
 </body>
 </html>
